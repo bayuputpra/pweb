@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/proseslogin.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+      <div class="login">
+
+          <div class="avatar">
+            <i class="fa fa-user"></i>
+          </div>
+          <form action="php/login.php" method="POST" onSubmit="return validasi()">
+              <h2>Login User</h2>
+            
+              <div class="box-login">
+                <i class="fas fa-envelope-open-text"></i>
+                <input type="text" name="username" id="username" placeholder="Username" >
+              </div>
+
+              <div class="box-login">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="Password" >
+              </div>
+
+              <div>
+                <input type="submit" value="Login" class="btn-login">
+              </div>
+              <div class="bottom">
+                <a href="regis.html">Register</a>
+                <a href="login2.html">Login as Admin</a>
+              </div>
+          </form>
+          <script type="text/javascript">
+            function validasi() {
+               var username = document.getElementById("username").value;
+                  var password = document.getElementById("password").value;		
+                    if (username != "" && password!="") {
+                      return true;
+                    }else{
+                      alert('Username dan Password harus di isi !');
+                    return false;
+                    }
+                } 
+          </script> 
+      </div>
+  </head>
+  </html>

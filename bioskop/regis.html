@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="css/prosesregis.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+      <div class="login">
+          <div class="avatar">
+            <i class="fa fa-user"></i>
+          </div>
+          <form action="php/regis.php" method="POST" onSubmit="return validasi()">
+              <h2>Register Form</h2>
+
+              <div class="box-login">
+                <input type="text" name="Nama" id="Nama" placeholder="Full Name" >
+              </div>
+
+              <div class="box-login">
+                <input type="text" name="Alamat" id="Alamat" placeholder="Alamat" >
+              </div>
+
+              <div class="box-login">
+                <input type="text" name="Notlp" id="Notlp" placeholder="phone number" >
+              </div>
+
+              <div class="box-login">
+                <tr>
+                <td>
+                    <strong><font color='#ffffff'>Jenis kelamin</font></strong>
+                </td>
+                <td>
+                    <input type="radio" name="Jk" value="perempuan"><font color='#ffffff'>female</font>
+                    <input type="radio" name="Jk" value="laki - laki"><font color='#ffffff'>male</font>
+                </td>
+                </tr>
+              </div>
+
+              <div class="box-login">
+                <i class="fas fa-envelope-open-text"></i>
+                <input type="text" name="username" id="username" placeholder="Username" >
+              </div>
+
+              <div class="box-login">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="Password" >
+              </div>
+
+              <div>
+                <input type="submit" name="Daftar" value="Daftar" class="btn-login">
+              </div>
+              
+              <div class="bottom">
+                <a href="login.html">Kembali</a>
+              </div>
+          </form>
+          <script type="text/javascript">
+            function validasi() {
+               var username = document.getElementById("username").value;
+                  var password = document.getElementById("password").value;		
+                    if (username != "" && password!="") {
+                      return true;
+                    }else{
+                      alert('Username dan Password harus di isi !');
+                    return false;
+                    }
+                } 
+          </script> 
+          
+      </div>
+  </head>
+  </html>

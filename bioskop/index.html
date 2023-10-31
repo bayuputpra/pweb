@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+	<title>CINEBAY XX1</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!--[if IE 6]>
+		<link rel="stylesheet" href="css/ie6.css" type="text/css" media="all" />
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-func.js"></script>
+	<!--slideshow-->
+		<style type='text/css'>
+			#slideshow img
+			{
+				position: absolute;
+				left: 190px;
+				top: 90px;
+			}
+		</style>
+		<script type='text/javascript'src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+		<script type='text/javascript'>
+		function simpleSlideshow(slideContainer, duration)
+		{
+			var currentSlide = $('img:nth-child(1)', slideContainer);
+			$(currentSlide)
+			.css({opacity: 0})
+			.appendTo(slideContainer)
+			.animate({opacity: 1}, 'normal', function(){
+				setTimeout(function(){
+					simpleSlideshow(slideContainer, duration);
+				}, duration);
+			})
+		}
+		$(function(){
+			var duration = 3000; // millsecond        
+			var slideContainer = $('#slideshow');
+			simpleSlideshow(slideContainer, duration);
+		});
+		</script>
+	<!--end slideshow-->
+</head>
+<body>
+<!-- Shell -->
+<div id="shell">
+	<!-- Header -->
+	<div id="header">
+		<img src="images/cinema.png"width="80px"height="80px">
+		<h1>CINEBAY XX1</h1>
+		<!-- Navigation -->
+		<div id="navigation">
+			<ul>
+			    <li><a class="active" href="index.html">HOME</a></li>
+			    <li><a href="in_theeaters.html">IN THEATERS</a></li>
+				<li><a href="coming_soon.html">COMING SOON</a></li>
+				<li class="dropdown"><a href="#">MENU</a>
+					<ul class="isi-dropdown">
+						<li><a href="php/pesan.php">PESAN TIKET</a></li>
+						<li><a href="php/lihatpesan.php">LIHAT PESANAN</a></li>
+					</ul>
+				</li>
+				<li><a href="php/logout.php">LOGOUT</a></li>
+			</ul>
+		</div>
+		<!-- end Navigation -->
+	</div>
+	<!-- end Header -->
+	
+	<!-- Main -->
+	<div id="main">
+		<!-- Content -->
+		<div id="content">
+
+			<!-- Box -->
+			<div class="box">
+				<div class="head"></div>
+			</div>
+			<!-- end Box -->	
+			
+			<!-- Enter -->
+			<div class="enter">
+				<div class="head">
+					<h2></h2>
+					<p class="text-right"><a href="#"></a></p>
+				</div>
+
+				<!-- slide -->
+				<div id='slideshow'>
+					<img src='images/Oblivion.jpg'width="970"height="460">
+					<img src='images/dilan.jpg'width="970"height="460">
+					<img src='images/dora.jpeg'width="970"height="460">
+				</div>
+				<!-- end slide -->
+				<div class="cl">&nbsp;</div>
+			</div>
+			<!-- end Enter -->
+
+			<!-- Box -->
+			<div class="box">
+				<div class="head">
+					<h2>MOST POPULAR</h2>
+					<p class="text-right"><a href="in_theeaters.html">See all</a></p>
+				</div>
+
+				<!-- Movie -->
+				<div class="movie">
+					<div class="movie-image">
+						<a href="#"><span class="play"><span class="name">FROZEN 2</span></span><img src="images/p1.jpg" alt="movie" /></a>
+					</div>
+					<div class="rating">
+						<p>RATING</p>
+						<div class="stars">
+							<div class="stars-in">
+								
+							</div>
+						</div>
+						<span class="comments">12</span>
+					</div>
+				</div>
+				<!-- end Movie -->
+				
+				<!-- Movie -->
+				<div class="movie">
+					<div class="movie-image">
+						<a href="#"><span class="play"><span class="name">CHARLIES ANGEL</span></span><img src="images/p3.jpg" alt="movie" /></a>
+					</div>	
+					<div class="rating">
+						<p>RATING</p>
+						<div class="stars">
+							<div class="stars-in">
+								
+							</div>
+						</div>
+						<span class="comments">12</span>
+					</div>
+				</div>
+				<!-- end Movie -->
+				
+				<!-- Movie -->
+				<div class="movie">
+					<div class="movie-image">
+						<a href="#"><span class="play"><span class="name">JOKER</span></span><img src="images/p4.jpg" alt="movie" /></a>
+					</div>	
+					<div class="rating">
+						<p>RATING</p>
+						<div class="stars">
+							<div class="stars-in">
+								
+							</div>
+						</div>
+						<span class="comments">12</span>
+					</div>
+				</div>
+				<!-- end Movie -->
+				
+				<!-- Movie -->
+				<div class="movie">
+					<div class="movie-image">
+						<a href="#"><span class="play"><span class="name">BUMI MANUSIA</span></span><img src="images/p7.jpg" alt="movie" /></a>
+					</div>	
+					<div class="rating">
+						<p>RATING</p>
+						<div class="stars">
+							<div class="stars-in">
+								
+							</div>
+						</div>
+						<span class="comments">12</span>
+					</div>
+				</div>
+				<!-- end Movie -->
+				
+				<!-- Movie -->
+				<div class="movie">
+					<div class="movie-image">
+						<a href="#"><span class="play"><span class="name">SPIDERMAN FAR FROM HOME</span></span><img src="images/p9.jpg" alt="movie" /></a>
+					</div>	
+					<div class="rating">
+						<p>RATING</p>
+						<div class="stars">
+							<div class="stars-in">
+								
+							</div>
+						</div>
+						<span class="comments">12</span>
+					</div>
+				</div>
+				<!-- end Movie -->
+				
+				<!-- Movie -->
+ 				<div class="movie last">
+ 					<div class="movie-image">
+						<a href="#"><span class="play"><span class="name">CAPTAIN MARVEL</span></span><img src="images/p10.jpg" alt="movie" /></a>
+					</div>	
+					<div class="rating">
+						<p>RATING</p>
+						<div class="stars">
+							<div class="stars-in">
+								
+							</div>
+						</div>
+						<span class="comments">12</span>
+					</div>
+				</div>
+				<!-- end Movie -->
+				<div class="cl">&nbsp;</div>
+			</div>
+			<!-- end Box -->
+			
+		</div>
+		<!-- end Content -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<p>
+			<a href="index.html">HOME</a> <span>|</span>
+			<a href="in_theeaters.html">IN THEATERS</a> <span>|</span>
+			<a href="coming_soon.html">COMING SOON </a> <span>|</span>
+		</p>
+		<p> &copy; 2020 CINEBAY XX1, LLC. All Rights Reserved.</a></p>
+	</div>
+	<!-- end Footer -->
+</div>
+<!-- end Shell -->
+</body>
+</html>
